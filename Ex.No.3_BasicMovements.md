@@ -58,8 +58,9 @@ public class TransformOperations : MonoBehaviour
 ```
 ### Output:
 
+<img width="1917" height="1026" alt="image" src="https://github.com/user-attachments/assets/b78a6a92-08c8-470d-b784-7f9f3354cc76" />
 
-<img width="1919" height="1021" alt="image" src="https://github.com/user-attachments/assets/e47cd868-4043-4b1a-afc8-08a9d9cd847e" />
+
 
 
 

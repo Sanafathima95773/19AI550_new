@@ -25,11 +25,13 @@ Your cube should only jump when touching the ground
 ```
 using UnityEngine;
 
-public class PlayerJump : MonoBehaviour
+
+[RequireComponent(typeof(Rigidbody))]
+public class jumping_behavior : MonoBehaviour
 {
     private Rigidbody rb;
     public float jumpForce = 5f;
-    
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -37,14 +39,15 @@ public class PlayerJump : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) )
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-            
+         
+            if (rb != null) 
+            {
+                rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+            }
         }
     }
-
-   
 }
 ```
 ### Output:

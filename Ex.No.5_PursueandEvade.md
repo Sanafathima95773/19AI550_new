@@ -30,7 +30,7 @@ To write a program to simulate the process of Pursue and Evade behavior in Unity
     Evader: Set Speed = 6.
 5. Write a script for  Player_movement behavior and save it
 ```
-
+```
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -52,6 +52,7 @@ public class Player_movement : MonoBehaviour
         
     }
 }
+```
 **Evader script**
 public class Evader : MonoBehaviour
 {
@@ -77,6 +78,7 @@ public class Evader : MonoBehaviour
         evade();          
      }
 }
+```
 **Pursuer script**
 public class Pursuer: MonoBehaviour
 {

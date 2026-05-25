@@ -158,6 +158,7 @@ behaviors:
     time_horizon: 64
     summary_freq: 10000
 ### Output:
+```
 <img width="519" height="320" alt="image" src="https://github.com/user-attachments/assets/19f30586-3325-48b2-8390-58fa7dd46c0b" />
 
 

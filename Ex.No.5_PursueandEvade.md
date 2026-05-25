@@ -52,7 +52,6 @@ public class Player_movement : MonoBehaviour
         
     }
 }
-```
 **Evader script**
 public class Evader : MonoBehaviour
 {
@@ -78,7 +77,6 @@ public class Evader : MonoBehaviour
         evade();          
      }
 }
-```
 **Pursuer script**
 public class Pursuer: MonoBehaviour
 {

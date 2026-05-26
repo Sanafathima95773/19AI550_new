@@ -37,7 +37,6 @@ using UnityEngine;
 
 public class Player_movement : MonoBehaviour
 {
-    // Start is called before the first frame update
     public float speed;
     void Start()
     {
@@ -46,7 +45,6 @@ public class Player_movement : MonoBehaviour
         transform.position=new Vector3(xdir,zdir);
     }
 
-    // Update is called once per frame
     void Update()
     {
         
@@ -55,7 +53,6 @@ public class Player_movement : MonoBehaviour
 **Evader script**
 public class Evader : MonoBehaviour
 {
-    // Start is called before the first frame update
     public NavMeshAgent agent;
     public Transform target;
     public float evadespeed;
@@ -71,7 +68,6 @@ public class Evader : MonoBehaviour
         agent.SetDestination(evadeposition);
 
     }
-    // Update is called once per frame
     void Update()
     {
         evade();          
@@ -80,7 +76,6 @@ public class Evader : MonoBehaviour
 **Pursuer script**
 public class Pursuer: MonoBehaviour
 {
-    // Start is called before the first frame update
     public NavMeshAgent agent;
     public Transform target;
     public float speed;
@@ -88,14 +83,12 @@ public class Pursuer: MonoBehaviour
     {
         agent=this.GetComponent<NavMeshAgent>();
     }
-       // Update is called once per frame
     void pursue()
     {
        Vector3 targetvelocity=target.position-transform.position;
        Vector3 futurepos = transform.position + targetvelocity.normalized*speed;
        agent.SetDestination(futurepos);
     } 
-    // Update is called once per frame
     void Update()
     {
         pursue();          

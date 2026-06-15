@@ -61,19 +61,18 @@ public class Evader : MonoBehaviour
     {
         agent= GetComponent<NavMeshAgent>();
     }
-
     void evade()
     {
         Vector3 fleedir = transform.position - target.position;
         Vector3 evadeposition = transform.position + fleedir.normalized * evadespeed;
         agent.SetDestination(evadeposition);
-
     }
     void Update()
     {
         evade();          
      }
 }
+
 ```
 **Pursuer script**
 public class Pursuer: MonoBehaviour
